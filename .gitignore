@@ -1,0 +1,15 @@
+# Local config (copy from config.sample.php)
+/config/config.php
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# Backups created via Settings
+/backups/
+/storage/

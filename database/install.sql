@@ -1,0 +1,3 @@
+-- Prefer importing database/expense_tracker.sql in phpMyAdmin (one file).
+-- Or import schema.sql first, then seed.sql.
+-- This file is a reminder only; phpMyAdmin does not always support SOURCE.
