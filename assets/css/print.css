@@ -1,0 +1,57 @@
+@page {
+  size: A4;
+  margin: 14mm;
+}
+
+body.print-body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #111;
+  background: #fff;
+  padding: 1.5rem;
+}
+
+.statement-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px solid #1f7a4d;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.statement-header h1 {
+  font-size: 1.6rem;
+  color: #1f7a4d;
+  margin: 0 0 0.2rem;
+}
+
+.total-box {
+  border: 1px solid #cfd8d3;
+  border-radius: 8px;
+  padding: 0.75rem;
+  text-align: center;
+  background: #f7faf8;
+}
+
+.statement-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+}
+
+.print-actions {
+  margin-bottom: 1rem;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body.print-body { padding: 0; }
+  .page-hint::after {
+    /* Browser print dialog can enable headers/footers for page numbers */
+    content: "";
+  }
+}
